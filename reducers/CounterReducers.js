@@ -10,9 +10,9 @@ function CounterReducers (state=counterInitialState, actions) {
     switch(actions.type){
 
         case INCREMENT: 
-                return state + 1;
+                return state + actions.value;
         case DECREMENT:
-                return state - 1;
+                return state - actions.value;
         case RESET:
                 return 0;
         default:

@@ -5,15 +5,18 @@
 import { INCREMENT, DECREMENT, RESET } from './actionTypes.js';
 
 
-export const  increment = () => {
+export const  increment = (value) => {
       return {
-          type:  INCREMENT
+          type:  INCREMENT,
+          value: value
       }
 }
 
-export const  decrement = () => {
+export const  decrement = (value) => {
         return {
-            type:  DECREMENT
+            type:  DECREMENT,
+            value: value
+
         }
 }
 

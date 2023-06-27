@@ -13,9 +13,9 @@ store.subscribe(
     }
 )
 
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(decrement())
-store.dispatch(reset())
+store.dispatch(increment(10))
+store.dispatch(increment(20))
+store.dispatch(increment(100))
+store.dispatch(decrement(500))
+
 
